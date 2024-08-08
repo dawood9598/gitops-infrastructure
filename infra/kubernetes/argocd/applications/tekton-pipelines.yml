@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/dawood9598/tekton.git
     targetRevision: HEAD
-    path: infra/kubernetes/tekton/tekton-pipelines.yml
+    path: infra/kubernetes/argocd/applications/tekton-pipelines.yml
   destination:
     server: https://kubernetes.default.svc
     namespace: tekton-pipelines
