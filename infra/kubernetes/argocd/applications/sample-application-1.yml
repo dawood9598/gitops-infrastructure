@@ -1,0 +1,13 @@
+project: default
+source:
+  repoURL: https://github.com/argoproj/argocd-example-apps.git
+  path: guestbook
+  targetRevision: HEAD
+destination:
+  namespace: default
+  name: in-cluster
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true
+    - ServerSideApply=true
+    - PrunePropagationPolicy=orphan
