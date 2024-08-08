@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/dawood9598/tekton.git"
+    repoURL: https://github.com/dawood9598/tekton.git
     targetRevision: HEAD
     path: infra/kubernetes/tekton/tekton-pipelines.yml
   destination:
