@@ -6,7 +6,7 @@ metadata:
 spec:
   project: ci-cd
   source:
-    repoURL: https://github.com/dawood9598/tekton.git
+    repoURL: https://github.com/dawood9598/gitops-infrastructure.git
     targetRevision: HEAD
     path: infra/kubernetes/tekton/tekton-dashboard/
   destination:
