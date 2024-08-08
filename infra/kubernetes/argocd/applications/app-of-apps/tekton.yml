@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tekton
+  namespace: argocd
+spec:
+  project: ci-cd
+  source:
+    repoURL: https://github.com/dawood9598/gitops-infrastructure.git
+    targetRevision: HEAD
+    path: infra/kubernetes/argocd/applications/tekton
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: tekton-pipelines

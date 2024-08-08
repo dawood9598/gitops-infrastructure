@@ -26,7 +26,7 @@ resource "kubernetes_manifest" "argo_cd_application" {
       source = {
         repoURL        = "https://github.com/dawood9598/gitops-infrastructure.git"
         targetRevision = "HEAD"
-        path           = "infra/kubernetes/argocd/applications"
+        path           = "infra/kubernetes/argocd/applications/app-of-apps"
       }
       destination = {
         server    = "https://kubernetes.default.svc"
@@ -34,6 +34,9 @@ resource "kubernetes_manifest" "argo_cd_application" {
       }
     }
   }
+  depends_on = [
+    helm_release.argocd
+  ]
 }
 
 #This resource creates a project for CI CD applications on Argo
@@ -68,4 +71,7 @@ resource "kubernetes_manifest" "argo_cd_project_ci_cd" {
       ]
     }
   }
+  depends_on = [
+    helm_release.argocd
+  ]
 }
