@@ -1,6 +1,6 @@
 # Project Overview
 
-This project provides the infrastructure and configuration for deploying a Kubernetes cluster with Tekton Pipelines and Argo CD.
+This project provides the infrastructure and configuration for deploying Tekton Pipelines and Argo CD on a kubernetes cluster.
 
 ## Components
 
