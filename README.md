@@ -12,7 +12,8 @@ This project provides the infrastructure and configuration for deploying a Kuber
 
 ### Prerequisites
 * Kubernetes cluster
-* Terraform installed
-* Argo CD installed
+* Terraform 
+* Argo CD
+* Tekton
 
 <img width="1698" alt="image" src="https://github.com/user-attachments/assets/b9666821-3018-4064-994c-1ae47d503c39">
