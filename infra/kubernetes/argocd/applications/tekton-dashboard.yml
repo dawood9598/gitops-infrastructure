@@ -4,7 +4,7 @@ metadata:
   name: tekton-dashboards
   namespace: argocd
 spec:
-  project: default
+  project: ci-cd
   source:
     repoURL: https://github.com/dawood9598/tekton.git
     targetRevision: HEAD
