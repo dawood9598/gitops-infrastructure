@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tekton-triggers
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/dawood9598/tekton.git
+    targetRevision: HEAD
+    path: infra/kubernetes/tekton/tekton-triggers/
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: tekton-pipelines
