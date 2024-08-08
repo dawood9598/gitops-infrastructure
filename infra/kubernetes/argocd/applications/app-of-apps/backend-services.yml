@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/dawood9598/gitops-infrastructure.git
     targetRevision: HEAD
-    path: infra/kubernetes/argocd/applications/backend-api
+    path: infra/kubernetes/argocd/applications/backend-services
   destination:
     server: https://kubernetes.default.svc
     namespace: tekton-pipelines
